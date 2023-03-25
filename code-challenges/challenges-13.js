@@ -39,8 +39,10 @@
 // Output: 5
 
 const objectCounter = (obj) => {
-    reduce(function(acc,current,index,arr){
-        return acc + current;
+    let count= obj.reduce(function (acc,current,index){
+        return index+1;
+    });
+    return count;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -60,8 +62,11 @@ const objectCounter = (obj) => {
 // ------------------------
 
 const stringReverse = (str) => {
-    // write your code here
-
+    let strSplit=str.split(" ");
+    let rev=strSplit.reduce(function (acc,current){
+        return `${current} ${acc}`;
+    });
+    return rev;
 }
 // -------------------------------------------------------------------------------------------------------
 
