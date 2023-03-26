@@ -109,14 +109,16 @@ const roundDecimals = (arr) => {
 //
 
 const employeesBonus = (arr) => {
-    
-    for(let i=0;i<arr.length;i++){
-        if (arr[i].workHours>8){
-            arr[i].salary=Number(arr[i].salary.slice(0, -1))+100+"$";
-        }else{
-          arr[i].salary=Number(arr[i].salary.slice(0,-1))+50+"$";
-        }
-    }return arr;
+        let afterBonus;
+         arr.forEach(function (element){
+             if (element.workHours>8){
+         element.salary=(Number(element.salary.slice(0, -1))+100+"$");
+             }else{
+                 element.salary=(Number(element.salary.slice(0, -1))+50+"$");
+             }
+         });
+         afterBonus=arr;
+         return afterBonus;
 }
 // -------------------------------------------------------------------------------------------------------
 
