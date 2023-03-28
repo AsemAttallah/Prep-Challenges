@@ -67,7 +67,7 @@ const LastWord_2 = (str) => {
 //
 
 const replaceWords = (str) => {
-        if(str.indexOf("I ")!=-1){
+        if(str.indexOf("I")!=-1){
             let arrStr=str.split(" ");
             for(let i=0;i<arrStr.length;i++){
                 if(arrStr[i]=="I"){
@@ -76,7 +76,7 @@ const replaceWords = (str) => {
                 }
             }
         }
-        if(str.indexOf("am ")!=-1){
+        if(str.indexOf("am")!=-1){
             let arrStr=str.split(" ");
             for(let i=0;i<arrStr.length;i++){
                 if(arrStr[i]=="am"){
@@ -85,7 +85,7 @@ const replaceWords = (str) => {
                 }
             }
         }
-        if(str.indexOf("was ")!=-1){
+        if(str.indexOf("was")!=-1){
             let arrStr=str.split(" ");
             for(let i=0;i<arrStr.length;i++){
                 if(arrStr[i]=="was"){
