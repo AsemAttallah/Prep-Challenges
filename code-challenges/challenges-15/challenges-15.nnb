@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                "function equalizeArray(arr) {\n    let arr2=[];\n    let x=0;\n    for(let i=0;i<arr.length;i++){\n      for(let j=0;j<arr.length;j++){\n          if(arr[i]==arr[j]){\n              x++;\n          }\n      } \n      arr2.push(x);\n      x=0;\n    }\n      return arr.length - Math.max(...arr2);\n}"
+                "function equalizeArray(arr){\n    let arr2=[];\n    let counter=0;\n    for(let i=0;i<arr.length;i++){\n      for(let j=0;j<arr.length;j++){\n          if(arr[i]==arr[j]){\n            counter++;\n          }\n      } \n      arr2.push(counter);\n      counter=0;\n    }\n      return arr.length - Math.max(...arr2);\n}"
             ],
             "outputs": []
         },
