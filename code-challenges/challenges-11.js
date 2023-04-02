@@ -124,7 +124,27 @@ function fullName(arr) {
 // -------------
 
 function gradesAvg(arr) {
-    // write your code here
+    let newArr=arr.map(function(std){
+         let y={};
+        y.firstName=std.firstName;
+        y.lastName=std.lastName;
+        y.gradsList=std.gradsList;
+         let num=std.gradsList.length
+          let i=0;
+          let x=0;
+          let max1=[];
+       let  avgGrades=std.gradsList.map(function(mark){
+              if(i<num){
+             x+=mark;
+             i++;
+             max1.push(x/num)
+              }
+             });
+          y.avg=Math.max(...max1);
+            
+        return y;
+    })
+   return newArr;
 }
 // -------------------------------------------------------------------------------------------------------
 
