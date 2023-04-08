@@ -15,7 +15,9 @@
 //
 
 const wordLength = (str) => {
-    // write your code here
+    let words = str.split(" ")
+    let countMidWord = words[Math.floor((words.length) / 2)].length;
+    return (countMidWord);
 }
 // -------------------------------------------------------------------------------------------------------
 
