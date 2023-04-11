@@ -6,7 +6,7 @@
 //
 // referring to the given examples find out the pattern used and
 // Write a function that takes 2 integers and prints the patterns using recursion
-// 
+
 // Input: 16, 5
 // Output: [16, 11, 6, 1, -4, 1, 6, 11, 16]
 //
@@ -55,6 +55,9 @@ const filterLinks = (str) => {
 //
 
 const isPalindrome = (str) => {
+    if (str==" "){
+        return true;
+    }
     let lowerCase = str.toLocaleLowerCase()
     let filterLetters = lowerCase.match(/[0-9a-z]/g);
     let counter = 0;
